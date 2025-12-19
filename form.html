@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for visiting us, we are pleased to show you our history</p>
+
+    <form id="survey-form">
+
+      <label id="name-label" for="name">Name</label>
+      <input
+      type="text"
+      id="name"
+      placeholder="Enter your name"
+      required
+      /><br>
+
+      <label id="email-label" for="email">Email</label>
+      <input
+      type="email"
+      id="email"
+      placeholder="Enter your email"
+      required
+      /><br>
+
+      <label id="number-label" for="number">Phone Number</label>
+      <input
+      type="number"
+      id="number"
+      min="8"
+      max="100"
+      placeholder="Enter a number"
+      /><br>
+
+      <label for="dropdown">How was your experience with the presentation?</label><br>
+
+      <select name="dropdown" id="dropdown">
+        <option value="satisfactory">Satisfactory</option>
+        <option selected value="good" >Good</option>
+      </select><br>
+
+      <fieldset>
+        <legend>Would you like to get back?</legend>
+        <label for="yes-option">Yes</label>
+        <input
+        id="yes-option"
+        type="radio"
+        name="get_back"
+        value="yes"
+        />
+        <label for="no-option">No</label>
+        <input
+        id="no-option"
+        type="radio"
+        name="get_back"
+        value="no"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>What thing do you like more?</legend>
+        <label for="p-option">Presentation</label>
+        <input
+        id="p-option"
+        type="radio"
+        name="favorite_thing"
+        value="presentation"
+        />
+        <label for="h-option">History</label>
+        <input
+        id="h-option"
+        type="radio"
+        name="favorite_thing"
+        value="history"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>What was the history about?</legend>
+        <label for="drama">-Drama</label>
+        <input
+          type="checkbox"
+          id="drama"
+          name="topic"
+          value="drama"
+        /><br>
+        <label for="romance">-Romance</label>
+        <input
+          type="checkbox"
+          id="romance"
+          name="topic"
+          value="romance"
+        /><br>
+        <label for="horror">-Horror</label>
+        <input
+          type="checkbox"
+          id="horror"
+          name="topic"
+          value="horror"
+        /><br>
+        <label for="thriller">-Thriller</label>
+        <input
+          type="checkbox"
+          id="thriller"
+          name="topic"
+          value="thriller"
+        /><br>
+        <label for="fantasy">-Fantasy</label>
+        <input
+          type="checkbox"
+          id="fantasy"
+          name="topic"
+          value="fantasy"
+        /><br>
+      </fieldset>
+
+      <label for="comments">Other Comments?</label>
+      <textarea cols="40" rows="5" name="comments" id="comments"></textarea>
+      
+      <button type="submit" id="submit">Submit</button>
+      
+    </form>
+  </body>
+</html>
